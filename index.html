@@ -203,25 +203,220 @@
             </div>
         </section>
 
-        <!-- AI Search Section -->
-        <section id="ai-search" class="content-section">
-            <h2>AI-Powered Information Assistant</h2>
-            <div class="search-container">
-                <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Ask anything about tetracycline tooth discoloration...">
-                    <button id="search-btn">Search Knowledge Base</button>
-                </div>
-                <div class="search-examples">
-                    <p>Try asking: "treatment options", "prevention methods", "staining mechanism", "critical periods"</p>
-                </div>
-                <div id="search-results" class="search-results">
-                    <div class="welcome-message">
-                        <h3>Welcome to Tetracycline Information Hub</h3>
-                        <p>I contain comprehensive knowledge about tetracycline-induced tooth discoloration. Ask me anything!</p>
-                    </div>
-                </div>
+      <!-- AI Search Section -->
+<section id="ai-search" class="content-section">
+    <div class="ai-header">
+        <div class="ai-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <h2>AI-Powered Information Assistant</h2>
+        <p>Access our advanced AI system for comprehensive information about tetracycline tooth discoloration</p>
+    </div>
+    
+    <div class="search-container">
+        <div class="ai-description">
+            <p>Our specialized AI assistant contains extensive knowledge about tetracycline-induced tooth discoloration, including causes, prevention, treatment options, and clinical research.</p>
+        </div>
+        
+        <div class="ai-studio-section">
+            <a href="https://aistudio.google.com/apps/drive/1YANCAkRhfC0B2F_mdg1CJMmHYq9_K6cQ?fullscreenApplet=true&showPreview=true&showAssistant=true" 
+               target="_blank" class="ai-studio-btn">
+                <span class="btn-icon">🤖</span>
+                Access Our AI Assistant
+                <span class="btn-arrow">→</span>
+            </a>
+            <p class="link-description">Click to open our specialized AI knowledge system</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-stethoscope"></i>
+                <h4>Expert Knowledge</h4>
+                <p>Based on the latest dental research and clinical studies</p>
             </div>
-        </section>
+            <div class="feature">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Instant Answers</h4>
+                <p>Get immediate responses to your dental health questions</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Trusted Information</h4>
+                <p>All content is verified by dental professionals</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* AI Search Section Styles */
+.ai-header {
+    background: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-header::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    transform: rotate(30deg);
+}
+
+.ai-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.ai-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ai-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.search-container {
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.ai-description {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.ai-studio-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.ai-studio-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: linear-gradient(135deg, #4285F4, #34A853);
+    color: white;
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(66, 133, 244, 0.3);
+}
+
+.ai-studio-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(66, 133, 244, 0.4);
+    background: linear-gradient(135deg, #3367D6, #2E8B57);
+}
+
+.btn-icon {
+    font-size: 1.5em;
+}
+
+.btn-arrow {
+    font-size: 1.3em;
+    transition: transform 0.3s ease;
+}
+
+.ai-studio-btn:hover .btn-arrow {
+    transform: translateX(5px);
+}
+
+.link-description {
+    margin-top: 15px;
+    color: #666;
+    font-size: 1rem;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    padding: 25px 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    background: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feature h4 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.feature p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .ai-header h2 {
+        font-size: 2rem;
+    }
+    
+    .features {
+        flex-direction: column;
+    }
+    
+    .ai-studio-btn {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+}
+</style>
     </main>
 
     <footer class="footer">
